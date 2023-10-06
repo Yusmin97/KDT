@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .a {
+      margin-left: 25vw;
+    }
+    @font-face {
+      font-family: Kaushan;
+      src: url(KaushanScript-Regular.ttf) format(truetype);
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Viverra fames sit lacus non ultrices hendrerit massa tristique. Tortor diam nulla quam convallis eu elit viverra non. Posuere nullam tristique senectus mauris ornare. Posuere sodales molestie metus consectetur ac tortor.
+      </p>
+    </div>
+    <div>
+      <h1>Seize</h1>
+      <h1>The</h1>
+      <h1>Day</h1>
+    </div>
+  </div>
+
+  <script>
+    const consol = document
+    console.dir(consol);
+
+    //문서 안에 있는 body의 자손 div id="root"값
+    const c = document.body.children[0]
+
+    //전체 body에 마진과 패딩 값 지정
+    const body = document.body
+      body.style.cssText = "margin: 0; padding:0; box-sizing: border-box;";
+
+    //root에 전체 값 지정
+    const background = document.getElementById("root");
+    background.style.cssText = "width: 100vw; height: 100vh; display: flex; overflow: scroll;"; 
+
+    //컨테이너1
+    const ct1 = c.children[0]
+    ct1.style.cssText = "width: 25vw; height: 100vh;background-color: grey; filter: blur(50px) position: fixed;;"
+
+    //컨테이너2
+    const ct2 = c.children[1]
+    ct2.style.cssText = "width: 75vw; height: 18vh; background-color: grey; mix-blend-mode: color-dodge; margin-top: 67vh; margin-left: 25vw; position: fixed;";
+    //컨테이너2 안에 블록
+    //컨테이너2 안에 블록 p태그
+    const ct2btmblockP = ct2.children[0]
+    ct2btmblockP.style.cssText = "width: 60vw; height: 10vh; font-size: 0.5rem; color: white; margin-left: 1vw; font-family: Kaushan; text-align: justify; font-weight: 400; position: fixed;";
+
+    //전체 컨테이너에 포지션 값 지정
+    const mainTitle = c.children[2]
+    mainTitle.style.cssText = "line-height: 0.5em; font-weight: 400; font-family: Kaushan; font-size: 3rem; color: #ff6666; position: fixed; top: 55vw; left: 10vw; mix-blend-mode: color-dodge; position: fixed;"
+
+    
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 태그 선택자 */
+    div {
+      font-size: 14px;
+    }
+    /* 자식 선택자 */
+    div > div {
+      background-color: yellow;
+      padding: 10px;
+    }
+    /* 후손 선택자 */
+    div div span {
+      text-align: center;
+      font-weight: bold;
+    }
+    /* 인전 형제 선택자 */
+    span + div {
+      text-decoration: underline;
+      color: red;
+    }
+    /* 속성 선택자 */
+    span[data-info] {
+      color: green;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+
+  <div>
+    <div>Vivamus lacinia odio vitae vestibulum.</div>
+    <span>Nulla vitae elit libero, a pharetra augue.</span>
+  </div>
+
+  <div>
+    <div>
+      <span>Etiam porta sem malesuada magna mollis euismod.</span>
+      <div>
+        <span>Nulla vitae elit libero, a pharetra augue.</span>
+      </div>
+    </div>
+  </div>
+
+  <span>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+  <div>Fusce dapibus, tellus ac cursus commodo</div>
+
+  <div>
+    <!-- data-* 사용자 정의 속성으로 추후 javascript와 함께 훈련하게 될 예정 -->
+    <!-- 속성 선택자의 용도로서만 예제를 확인할 것 -->
+    <span data-info="yes">Vestibulum id ligula porta felis euismod semper.</span>
+  </div>
+  
+</body>
+</html>

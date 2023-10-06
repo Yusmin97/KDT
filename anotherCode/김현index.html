@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin:0px;
+      padding:0px;
+      box-sizing:border-box;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="root">
+    <div class="fixed">
+      <div class="leftbox"></div>
+      <div class="rightbox">
+        <img class="hamberger">
+        <div class="rightboxbottombox">
+          <ul class="text">
+            Lorem ipsum dolor sit amet consectetur. Viverra fames sit lacus non ultrices hendrerit massa tristique. Tortor diam nulla quam convallis eu elit viverra non. Posuere nullam tristique senectus mauris ornare. Posuere sodales molestie metus consectetur ac tortor.
+          </ul>
+        </div>
+      </div>
+      <ul class="fontbox">
+        <li class="fontboxtext1">Seize</li>
+        <li class="fontboxtext2">The</li>
+        <li class="fontboxtext3">Day</li>
+      </ul>
+    </div>
+    <img class="bgimg1">
+    <img class="bgimg2">
+    <img class="bgimg3">
+    <img class="bgimg4">
+  </div>
+  <script>
+
+    var test = document.getElementById("root")
+    var fixed = document.getElementsByClassName("fixed")[0]
+    var leftbox = document.getElementsByClassName("leftbox")[0]
+    var rightbox = document.getElementsByClassName("rightbox")[0]
+    var hamberger = document.getElementsByClassName("hamberger")[0]
+    var rightboxbottombox = document.getElementsByClassName("rightboxbottombox")[0]
+    var text = document.getElementsByClassName("text")[0]
+    var fontbox = document.getElementsByClassName("fontbox")[0]
+    var fontboxtext1 = document.getElementsByClassName("fontboxtext1")[0]
+    var fontboxtext2 = document.getElementsByClassName("fontboxtext2")[0]
+    var fontboxtext3 = document.getElementsByClassName("fontboxtext3")[0]
+    var bgimg1 = document.getElementsByClassName("bgimg1")[0]
+    var bgimg2 = document.getElementsByClassName("bgimg2")[0]
+    var bgimg3 = document.getElementsByClassName("bgimg3")[0]
+    var bgimg4 = document.getElementsByClassName("bgimg4")[0]
+    var bgimg5 = document.getElementsByClassName("bgimg5")[0]
+    var body = document.body
+
+
+    console.dir(body)
+    body.style.overflowX = "hidden"
+
+    console.dir(root)
+
+    root.style.width = "100vw";
+    root.style.height = "500vh";
+    root.style.display = "flex";
+    root.style.flexDirection = "column";
+
+    console.dir(hamberger)
+    hamberger.style.position = "fixed";
+    hamberger.style.top = "7vh";
+    hamberger.style.left = "85vw";
+    hamberger.src = "bars-solid.svg"
+    hamberger.style.width = "7vw";
+    // hamberger.style.mixBlendMode ="color-dodge";
+    // hamberger.style.fill = "#555555";
+
+    console.dir(fixed)
+// class 사용시 htmlcollectionof[element] 즉,배열이기때문에 class사용시에는 인덱스로 적용하여 확인해줘야한다. 즉, 클래스로 지정시 htmlcollection으로 들어가기 때문에 [0]으로 지정해줘야 한다. 
+    fixed.style.width = "100vw";
+    fixed.style.height = "100vh";
+    // fixed.style.position = "relative";
+    fixed.style.flexDirection = "row";
+    fixed.style.backgroundImage = "url(image/image01.jpg)"
+    fixed.style.backgroundSize ="cover"
+
+    console.dir(leftbox)
+    leftbox.style.width = "30vw";
+    leftbox.style.height = "100vh";
+    leftbox.style.backgroundColor = "#606060"
+    leftbox.style.opacity ="0.5"
+    leftbox.style.mixBlendMode = "multiply"
+    leftbox.style.position = "fixed"
+// mixBlendMode는 배경의 혼합 상태를 지정하는 속성이다.
+    console.dir(rightbox)
+    rightbox.style.width = "75vw"
+    rightbox.style.height = "100vh"
+
+
+    
+
+    
+
+    console.dir(rightboxbottombox)
+    rightboxbottombox.style.width = "74vw";
+    rightboxbottombox.style.height = "15vh";
+    rightboxbottombox.style.position = "fixed"
+    rightboxbottombox.style.top = "70vh"
+    rightboxbottombox.style.left = "30vw"
+    rightboxbottombox.style.mixBlendMode ="color-dodge"
+    rightboxbottombox.style.backgroundColor = "#ABABAB"
+
+    console.dir(text)
+    text.style.textAlign = "left"
+    text.style.marginTop = "2vh"
+    text.style.marginLeft = "1vw"
+    text.style.color = "#FFFFFF"
+    text.style.fontSize = "12px"
+    text.style.fontFamily = "Kaushan Script"
+    // 폰트 넣어야함 링크로
+
+    console.dir(fontbox)
+    fontbox.style.fontSize = "30vw";
+    fontbox.style.color = "#FF6666";
+    fontbox.style.position = "fixed";
+    fontbox.style.top = "24vh";
+    fontbox.style.left = "8vw";
+    fontbox.style.listStyle = "none";
+    fontbox.style.lineHeight = "0.8"
+    fontbox.style.fontFamily = "Kaushan Script"
+    fontbox.style.mixBlendMode ="color-dodge"
+
+
+
+    console.dir(bgimg1)
+    bgimg1.style.backgroundSize = "cover"
+    bgimg1.style.width = "100vw";
+    bgimg1.style.height = "100vh";
+    bgimg1.style.backgroundImage = "url(image/image02.jpg)"
+
+    console.dir(bgimg2)
+    bgimg2.style.backgroundSize = "cover"
+    bgimg2.style.width = "100vw";
+    bgimg2.style.height = "100vh";
+    bgimg2.style.backgroundImage = "url(image/image03.jpg)"
+
+    console.dir(bgimg3)
+    bgimg3.style.backgroundSize = "cover"
+    bgimg3.style.width = "100vw";
+    bgimg3.style.height = "100vh";
+    bgimg3.style.backgroundImage = "url(image/image04.jpg)"
+
+    console.dir(bgimg4)
+    bgimg4.style.backgroundSize = "cover"
+    bgimg4.style.width = "100vw";
+    bgimg4.style.height = "100vh";
+    bgimg4.style.backgroundImage = "url(image/image05.jpg)"
+
+
+
+
+  
+
+  </script>
+</body>
+</html>

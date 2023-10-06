@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+
+    @media (max-width:768px) {
+    .back {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      background-color: #656565;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .graybox {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      background-color: #656565;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox1 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #cef1d7;
+    }
+    .greenbox {
+      width: 50vw;
+      height: 100vh;
+      background-color: #aac6b1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #656565;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  @media (min-width:769px) and (max-width:1024px) {
+    .back {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      background-color: #656565;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+    }
+    .graybox {
+      width: 100vw;
+      height: 80vh;
+      display: flex;
+      background-color: #656565;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox1 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #cef1d7;
+    }
+    .greenbox {
+      width: 100vw;
+      height: 20vh;
+      background-color: #aac6b1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #656565;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  @media (min-width:1025px) {
+    .back {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      background-color: #656565;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap-reverse
+    }
+    .graybox {
+      width: 100vw;
+      height: 90vh;
+      display: flex;
+      background-color: #656565;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox1 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #cef1d7;
+    }
+    .greenbox {
+      width: 100vw;
+      height: 10vh;
+      background-color: #aac6b1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #656565;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1vw;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="back">
+      <div class="graybox">
+        <div class="textbox1">
+          <div>KOREA</div>
+        </div>
+      </div>
+      <div class="greenbox">
+        <div class="textbox2">
+          <ul>
+            <li><a href="./유승민 HTML-Training9.html">KOREA</a></li>        
+            <li><a href="./digital.html">DIGITAL</a></li>        
+            <li><a href="./training.html">TRAINING</a></li>        
+            <li><a href="./practice.html">PRACTICE</a></li>        
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

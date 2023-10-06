@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      color: black;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>아이디어를 도출하는 방법</h1>
+
+  <ul>
+    <li>
+      <h2>브레인스토밍</h2>
+      <p>브레인스토밍은 여러 사람이 모여 다양한 아이디어를 자유롭게 제시하는 방법이라고 익히 알고 있습니다. 여기서 가장 중요한 자세는 '가치판단'하지 않고 모두 꺼내는 것이 핵심입니다. 이전의 경험은 의견 하나씩 강제로 내는 형태를 취했다면, 훨씬 더 자유롭게 마치 4살 꼬마아이가 맥락없이 질문하는 것과 매우 흡사한 활동입니다.</p>
+    </li>
+    <li>
+      <h2>SWOT 분석</h2>
+      <p>SWOT 분석은 Strengths(강점), Weaknesses(약점), Opportunities(기회), Threats(위협)의 약자입니다. 마켓팅, 전략을 수립할 때 매우 인기가 높은 객관적 지표화 분석 방법으로 하나의 관점을 집중적으로 객관화 하는 방식을 말 합니다. 충분한 만큼의 아이디어 자산화가 진행되었을 때, 관점의 매몰에 탈출하기 위한 큰 도움이 되는 방법입니다.</p>
+    </li>
+    <li>
+      <h2>피쉬본 다이어그램</h2>
+      <p>피쉬본 다이어그램은 문제의 본질을 이해하기 위해 단계를 마치 '물고기 뼈' 처럼 그려가며 중간 단계를 점검하는 방식입니다. 놓치기 쉬운 관점을 점검을 할 수 있기 때문에 '완성형'에 다다랐을 때 예상할 수 있는 예외 변수를 확인하는 방법론 중 하나 입니다.</p>
+    </li>
+  </ul>
+
+  <button id="toggleButton">다크모드</button>
+
+  <script>
+    const toggleButton = document.getElementById("toggleButton");
+
+    toggleButton.addEventListener("click", function() {
+      const body = document.querySelector("body");
+
+      if (body.style.backgroundColor === "white") {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+
+      } else {
+        body.style.backgroundColor ="white";
+        body.style.color = "black";
+      }
+    });
+  </script>
+</body>
+</html> 

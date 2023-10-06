@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <style>
+    *:focus{outline: 0;}
+    
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+
+
+    @media (max-width:500px) {
+      .loginl {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(https://e1.pxfuel.com/desktop-wallpaper/928/965/desktop-wallpaper-small-sea-wave-tv-high-resolution-1920x1080-tv.jpg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover; 
+    }
+    .login-form {
+      width: 80vw;
+      height: 40vh;
+      background-color: rgba(255, 232, 187, 0.3) ;
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 20px;
+      border: 1px solid#ffda92;
+    }
+    .text-field {
+      font-size: 12px;
+      border: 0;
+      width: 60vw;
+      height: 2.7vh;
+      background-color: #ffe8bb;
+      color: rgba(83, 81, 97, 0.50);
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      border-radius: 5px;
+      display: flex;
+      margin: 1.5vw;
+    }
+    .submit-btn {
+      width: 18vw;
+      height: 3vh;
+      font-size: 12px;
+      border-radius: 5px;
+      background-color: #535161;
+      color: #ffda92;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      border-radius: 5px;
+      margin-left: 10vw;
+      margin-top: 1vw;
+    }
+    .links {
+      font-size: 12px;
+      color: #ffe8bb;
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      margin-top: 1vw;     
+    }
+    .mobiline {
+      width: 60vw;
+      height: 0.1vh;
+      /* transform: rotate(-90deg); */
+      background-color: #535161;
+    }
+    .flex-row {
+      flex-direction: row;
+      display: flex;
+    } 
+    }
+    
+    @media (min-width:1820px) {
+    
+      .loginl {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(https://e1.pxfuel.com/desktop-wallpaper/928/965/desktop-wallpaper-small-sea-wave-tv-high-resolution-1920x1080-tv.jpg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover; 
+    }
+    .login-form {
+      width: 80vw;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;    
+      margin-top: 30vw;
+    }
+    .text-field {
+      font-size: 12px;
+      border: 0;
+      width: 13vw;
+      height: 2vh;
+      background-color: #ffe8bb;
+      color: rgba(83, 81, 97, 0.50);
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      border-radius: 5px;
+      display: flex;
+      margin: 0.5vw;
+    }
+    .submit-btn {
+      width: 4vw;
+      height: 1.5vw;
+      font-size: 12px;
+      border-radius: 5px;
+      background-color: #ffe8bb;
+      color: #535161;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      border-radius: 5px;
+      margin-left: 2vw;
+      margin-top: 1vw;
+    }
+    .links {
+      font-size: 12px;
+      color: #ffe8bb;
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      margin-top: 1vw;     
+    }
+    .mobiline {
+      width: 13vw;
+      height: 0.1vh;
+      /* transform: rotate(-90deg); */
+      background-color: #535161;
+    }
+    .flex-row {
+      flex-direction: row;
+      display: flex;
+    } 
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="loginl">
+      <div class="login-form">
+        <form>
+          <input type="text" name="ID" class="text-field" placeholder="아이디">
+          <input type="text" name="passWord" class="text-field" placeholder="password">
+        </form>
+        <div class="mobiline"></div>
+        <div class="flex-row">
+          <div class="links">
+            <a href="#">Forgot password?</a>
+            <a href="#">Don't have an account?</a>
+          </div>
+          <form>
+            <input type="submit" value="Sign In" class="submit-btn">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

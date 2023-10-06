@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      transition: 1s;
+    }
+
+
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    @media (min-width:1000px) and (max-width:1920px) {
+      #root {      
+        background-color: cadetblue;
+        font-size: 20px;
+      }
+    }
+    @media (min-width:400px) and (max-width:599px) {
+      #root {        
+        background-color: purple;
+        font-size: 60px;
+      }
+    }
+    @media (min-width:600px) and (max-width:999px) {
+      #root {
+        background-color: yellow;
+        font-size: 40px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>안녕하세요</div>
+  </div>
+</body>
+</html>
